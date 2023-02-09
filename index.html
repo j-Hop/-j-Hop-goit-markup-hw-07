@@ -1,15 +1,18 @@
 <!DOCTYPE html>
      <html lang="en">
    <head>
-          <meta charset="UTF-8">
-          <meta http-equiv="X-UA-Compatible" content="IE=edge">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta charset="UTF-8"/>
+          <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
           <title>WebStudio</title>
           <link rel="preconnect" href="https://fonts.googleapis.com"/>
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
           <link rel="stylesheet" href="./css/style.css"/>
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
-  </head>
+          <link rel="stylesheet" href="./css/mobile.css"/>
+          <link rel="stylesheet" href="./css/tablet.css"/>
+          <link rel="stylesheet" href="./css/dekstop.css"/>
+        </head>
   <body class="body">
       <header class="header">
         <div class="container">
@@ -21,11 +24,59 @@
               <li class="header-pages"><a class="header-link link" href="./index.html">Contacts</a></li>
             </ul>
           </nav>
-                    <ul class="header-list list">
+                    <ul class="header-list-info list">
                 <li class="header-info link"><a class="header-mailo link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                 <li class="header-info link"><a class="header-tel link" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a></li>
                      </ul>
                     </div>
+                     <button type="button" class="menu-open">
+                      <svg class="hamburger" width="32" height="22" .js-open-menu>
+                        <use href="./images/icons.svg/user-icons.svg#icon-hamburger"></use>
+                      </svg>
+                     </button>
+                     <div class="mob-menu" .js-menu-container>
+                      <div class="container">
+                        <div class="mob-wrap-up">
+                      <button type="button" class="menu-close" .js-close-menu>
+                        <svg class="menu-header" width="8" height="8">
+                          <use href="./images/icons.svg/close-icons.svg#icon-close"></use>
+                        </svg>
+                      </button>
+                      <ul class="menu-list list">
+                        <li class="menu-pages"><a class="menu-link link current" href="./index.html">Studio</a></li>
+                        <li class="menu-pages"><a class="menu-link link" href="./portfolio.html">Portfolio</a></li>
+                        <li class="menu-pages"><a class="menu-link link" href="./index.html">Contacts</a></li>
+                      </ul></div>
+                      <div class="mob-wrap-down">
+                      <ul class="menu-list-info list">
+                        <li class="menu-info link"><a class="menu-tel link" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a></li>
+                        <li class="menu-info link"><a class="menu-mailo link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                             </ul>
+                             <ul class="menu-media-list list">
+                              <li class="menu-media-item"><a href="" class="menu-media-link link">
+                                <svg class="menu-media-navigation" width="24" height="24">
+                                  <use href="./images/icons.svg/icons.svg#icon-instagram-1"></use>
+                                </svg>
+                              </a></li>
+                              <li class="menu-media-item"><a href="" class="menu-media-link link">
+                                <svg class="menu-media-navigation" width="24" height="24">
+                                  <use href="./images/icons.svg/icons.svg#icon-twitter-1"></use>
+                                </svg>
+                              </a></li>
+                              <li class="menu-media-item"><a href="" class="menu-media-link link">
+                                <svg class="menu-media-navigation" width="24" height="24">
+                                  <use href="./images/icons.svg/icons.svg#icon-facebook-1"></use>
+                                </svg>
+                              </a></li>
+                              <li class="menu-media-item"><a href="" class="menu-media-link link">
+                                <svg class="menu-media-navigation" width="24" height="24">
+                                  <use href="./images/icons.svg/icons.svg#icon-linkedin-1"></use>
+                                </svg>
+                              </a></li>
+                              </ul></div>
+                     </div>
+                    </div>
+
                 </header>
                 <main>
                     <section class="section">
@@ -78,9 +129,36 @@
                       <div class="container">
                         <h2 class="image-caption">What are we doing</h2>
                         <ul class="image-list list">
-                        <li class="link image-item" ><img src="./images/imagine1.jpg" alt="computer" width="360" height="300"/></li>
-                        <li class="link image-item" ><img src="./images/imagine2.jpg" alt="computer" width="360" height="300"/></li>
-                        <li class="link image-item" ><img src="./images/imagine3.jpg" alt="phoneinhand" width="360" height="300"/></li>
+                        <li class="link image-item" >
+                          <img
+                           src="./images/imagine1.jpg"
+                           alt="computer"
+                           srcset="
+                           ./images/imagine1.jpg 1x ,
+                           ./images/imagine1.2x.jpg 2x" 
+                           width="360" 
+                           height="300"/>
+                          </li>
+                        <li class="link image-item" >
+                          <img
+                           src="./images/imagine2.jpg" 
+                           alt="computer" 
+                           srcset="
+                           ./images/imagine2.jpg 1x ,
+                           ./images/imagine2.2x.jpg 2x" 
+                           width="360" 
+                           height="300"/>
+                          </li>
+                        <li class="link image-item" >
+                          <img 
+                          src="./images/imagine3.jpg" 
+                          alt="phoneinhand" 
+                          srcset="
+                          ./images/imagine3.jpg 1x ,
+                          ./images/imagine3.2x.jpg 2x" 
+                          width="360" 
+                          height="300"/>
+                        </li>
                         </ul>
                       </div>
                     </section>
@@ -88,7 +166,15 @@
                       <div class="container">
                     <h2 class="info-pre-caption">Our Team</h2>
                     <ul class="info-list list">
-                    <li class="info-item"><img src="./images/img2.1.jpg" alt="it" width="264" height="260"/>
+                    <li class="info-item">
+                      <img 
+                      src="./images/img2.1.jpg" 
+                      alt="it" 
+                      srcset="
+                      ./images/img2.1.jpg 1x ,
+                      ./images/img2.1.2x.jpg 2x"
+                      width="264" 
+                      height="260"/>
                     <div class="info-navigation"><h3 class="info-caption">Mark Guerrero</h3> 
                     <p class="info-paragraph">Product Designer</p>
                     <ul class="icon-list list">
@@ -123,7 +209,15 @@
                     </ul>
                     </div>
                     </li>
-                    <li class="info-item"><img src="./images/img2.2.jpg" alt="it" width="264" height="260"/>
+                    <li class="info-item">
+                      <img 
+                      src="./images/img2.2.jpg" 
+                      alt="it" 
+                      srcset="
+                      ./images/img2.2.jpg 1x ,
+                      ./images/img2.2.2x.jpg 2x"
+                      width="264" 
+                      height="260"/>
                     <div class="info-navigation"><h3 class="info-caption">Tom Ford</h3> 
                     <p class="info-paragraph">Frontend Developer</p>
                     <ul class="icon-list list">
@@ -158,7 +252,15 @@
                     </ul>
                     </div>
                   </li>
-                    <li class="info-item"><img src="./images/img2.3.jpg" alt="it" width="264" height="260"/>
+                    <li class="info-item">
+                      <img 
+                      src="./images/img2.3.jpg" 
+                      alt="it"
+                      srcset="
+                      ./images/img2.3.jpg 1x ,
+                      ./images/img2.3.2x.jpg 2x"
+                      width="264" 
+                      height="260"/>
                     <div class="info-navigation"><h3 class="info-caption">Camila Garcia</h3> 
                     <p class="info-paragraph">Marketing</p>
                     <ul class="icon-list list">
@@ -193,7 +295,15 @@
                     </ul>
                   </div>
                   </li>
-                    <li class="info-item"><img src="./images/img2.4.jpg" alt="it" width="264" height="260"/>
+                    <li class="info-item">
+                      <img 
+                      src="./images/img2.4.jpg" 
+                      alt="it"
+                      srcset="
+                      ./images/img2.4.jpg 1x ,
+                      ./images/img2.4.2x.jpg 2x"
+                      width="264" 
+                      height="260"/>
                     <div class="info-navigation"><h3 class="info-caption">Daniel Wilson</h3> 
                     <p class="info-paragraph">UI Designer</p>
                     <ul class="icon-list list">
@@ -281,7 +391,7 @@
                     </section>
                       </main>
                       <footer class="footer">
-                        <div class="container">
+                        <div class="container ">
                         <div class="footer-container">
                         <div class="width"><a href="" class="footer-logo link"><span class="footer-span link">Web</span>Studio</a>
                         <p class="footer-paragraph">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p></div>
@@ -362,5 +472,6 @@
                       </div>
                       </div>
                       <script src="./js/modal.js"></script>
+                      <script src="./js/mobile-menu.js"></script>
                 </body>
                 </html>

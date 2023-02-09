@@ -1,0 +1,258 @@
+@media screen and (min-width: 1200px) {
+    .container{
+        width: 1158px;
+    }
+
+/*-------------INDEX.MAIN-------------*/
+
+.header> .container{
+    width: 1158px;
+}
+
+.header-logo{
+    margin-right: 72px;
+}
+
+.header-navigation{
+    display:flex;
+    align-items: center;
+    margin-right: auto;
+    }
+
+    .header-list{
+        display:flex;
+        gap: 40px;
+        
+      }
+
+      .header-list-info{
+        display:flex;
+        gap: 40px;
+        
+      }
+
+.header-mailo,
+.header-tel{
+font-weight: 400;
+font-size: 16px;
+line-height:var(--first-typical-lh);
+letter-spacing: 0.02em;
+color: var(--second-color);
+display: block;
+padding-top: 24px;
+padding-bottom: 24px;
+transition: color var(--transition-duration) var(--transition-timing-function);
+}
+
+      .header-link{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: var(--first-typical-lh);
+        letter-spacing: 0.02em;
+        color: var(--first-color);
+        display: block;
+        transition: color var(--transition-duration) var(--transition-timing-function)  ;
+        position: relative;
+        }
+
+        .header-link.current::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            background-color:var(--sixth-color);
+            left: 0;
+            bottom: -25px;
+            border-radius: 2px;
+          }
+
+          .header-link.active::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            background-color:var(--sixth-color);
+            left: 0;
+            bottom: -25px;
+            border-radius: 2px;
+          }
+
+
+
+.section{
+    background-image: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office\ 1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section {
+      background-image: url("../images/people-office\ 1.2x.jpg");
+    }
+  }
+
+  .section-headline{
+    max-width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--third-color);
+    margin: 0 auto;
+    margin-bottom: 48px;
+    }
+
+
+  
+
+  .skills{
+    flex-direction: column;
+    padding-top: 120px;
+  }
+
+  .skills-list{
+    display: flex;
+    gap: 24px;
+  }
+
+  .background-navigation{
+    background-color: #F4F4FD;
+    border-radius: 4px;
+    height: 112px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skills-pages{
+    width: calc((100% - 72px) / 4);
+  }
+
+
+    .image{
+        display: block;
+        padding-top: 120px;
+        padding-bottom: 120px;
+      }
+      
+      .image-caption{
+      font-size: 36px;
+      line-height:1.11;
+      text-align: center;
+      letter-spacing: 0.02em;
+      text-transform: capitalize;
+      color: var(--first-color);
+      margin-bottom: 72px;
+      }
+      
+      .image-list{
+        display: flex;
+        gap: 24px;
+      }
+      
+      .image-item{
+       width: 100%;
+      }
+
+      .info> .container{
+        width: 1158px;
+    }
+    
+
+      .info{
+        background-color: #F4F4FD;
+        padding-top: 96px;
+        padding-bottom: 128px;
+        }
+
+        .info-list{
+            display: flex;
+            gap: 24px;
+          }
+
+          .info-item{
+            flex-basis: calc((100% - 3 * 24px) / 4);
+          }
+
+        
+
+      .customers> .container{
+        width: 1158px;
+    }
+
+
+.customers{
+padding-top: 120px;
+padding-bottom: 120px;
+}     
+      
+.customers-list{
+display: flex;
+gap: 24px;
+}
+      
+.customers-item{
+width: calc((100% - 120px) / 6);
+height: 88px;
+}
+
+.footer> .container{
+    width: 1155px;
+}
+
+.footer{
+    background-color: var(--first-color);
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    }
+
+    .footer-container{
+        display: flex;
+        align-items: unset;
+        justify-content: unset;
+      }
+
+      .width {
+        width: 264px;
+        margin-right: 120px;
+       }  
+
+
+       .social-media-list{
+        display:flex;
+        gap: 16px;
+      }
+
+      .footer-social{
+        margin-right: 80px;
+        margin-left: unset;
+      }
+
+
+.send{
+    margin-right: auto;
+    margin-left: unset;
+    margin-top: unset;
+}
+
+      .send-input{
+        width: 264px;
+        margin-bottom: unset;
+
+      }
+      
+      .send-text{
+        margin-left: 24px;
+
+      }
+
+
+
+
+
+}

@@ -1,0 +1,133 @@
+@media screen and (min-width: 480px) {
+    .container{
+        width: 426px;
+    }
+
+    /*-------------INDEX.MAIN-------------*/
+
+    .header> .container{
+        width: 426px;
+    }
+    
+    .header-logo{
+        margin-right: 249px;
+    }
+   
+    .header-link{
+        display: none;
+    }
+
+    .header-mailo,
+    .header-tel{
+      display: none;
+    }
+
+    .menu-tel{
+        font-weight: 600;
+      font-size: 36px;
+      line-height: 1.11;
+      text-transform: capitalize;
+      color: var(--fourth-color);
+      }
+  
+
+    .section{
+        background-image: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/bg-mobile.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .section {
+          background-image: url("../images/bg-mobile2x.jpg");
+        }
+      }
+
+      .section-headline{
+        max-width: 496px;
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: var(--third-color);
+        margin: 0 auto;
+        margin-bottom: 72px;
+        }
+
+      .skills{
+        padding-top: 96px;
+        padding-bottom: 96px;
+      }
+      
+      
+      .skills-list{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 72px;
+      }
+
+
+
+.image{
+    display: none;
+}
+
+
+
+.info{
+    padding-top: 96px;
+    padding-bottom: 128px;
+    }
+
+    .info-list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 72px;
+      }
+
+
+      
+
+
+
+.customers{
+padding-top: 96px;
+padding-bottom: 96px;
+}
+
+.customers-list{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 72px;
+}
+
+.customers-item{
+    width: calc((100% - 16px) / 2);
+    height: 88px;
+    }
+
+.footer> .container{
+    width: 426px;
+}
+
+
+    .footer{
+        background-color: var(--first-color);
+        padding-top: 96px;
+        padding-bottom: 96px;
+        }
+
+
+
+          .width {
+            width: 268px;
+           }  
+   
+           .send-input{
+            margin-bottom: 72px;
+           }
+}
