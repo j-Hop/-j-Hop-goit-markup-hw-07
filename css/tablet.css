@@ -9,6 +9,11 @@
     width: 765px;
 }
 
+.header{
+    padding-top: unset;
+    padding-bottom: unset;
+}
+
 .header-logo{
     margin-right: 123px;
 }
@@ -27,11 +32,13 @@
 
 
 
+
+
 .header-mailo{
 font-weight: 400;
-font-size: 16px;
-line-height:var(--first-typical-lh);
-letter-spacing: 0.02em;
+font-size: 12px;
+line-height:1.33;
+letter-spacing: 0.04em;
 color: var(--second-color);
 display: block;
 padding-top: 24px;
@@ -42,9 +49,9 @@ transition: color var(--transition-duration) var(--transition-timing-function);
 
 .header-tel{
 font-weight: 400;
-font-size: 16px;
-line-height:var(--first-typical-lh);
-letter-spacing: 0.02em;
+font-size: 12px;
+line-height:1.33;
+letter-spacing: 0.04em;
 color: var(--second-color);
 display: block;
 padding-bottom: 10px;
@@ -69,7 +76,7 @@ transition: color var(--transition-duration) var(--transition-timing-function);
   height: 4px;
   background-color:var(--sixth-color);
   left: 0;
-  bottom: -32px;
+  bottom: -25px;
   border-radius: 2px;
 }
 
@@ -80,7 +87,7 @@ transition: color var(--transition-duration) var(--transition-timing-function);
   height: 4px;
   background-color:var(--sixth-color);
   left: 0;
-  bottom: -32px;
+  bottom: -25px;
   border-radius: 2px;
 }
 
@@ -90,6 +97,11 @@ transition: color var(--transition-duration) var(--transition-timing-function);
 
 .menu-open{
     display: none;
+}
+
+.section{
+    padding-top: 111px;
+    padding-bottom: 108px;
 }
 
 
@@ -104,7 +116,7 @@ transition: color var(--transition-duration) var(--transition-timing-function);
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .section {
-      background-image: url("../images/bg-tablet2x.jpg");
+      background-image:linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/bg-tablet2x.jpg");
     }
   }
 
@@ -122,6 +134,21 @@ transition: color var(--transition-duration) var(--transition-timing-function);
   .skills{
     padding-top: 96px;
     padding-bottom: 96px;
+  }
+
+  .skills-caption{
+    font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+text-align: unset;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+  }
+
+  .skills-paragraph{
+    font-weight: 500;
+font-size: 16px;
+line-height: var(--first-typical-lh);
   }
   
   
@@ -185,7 +212,7 @@ transition: color var(--transition-duration) var(--transition-timing-function);
                 }
 
                 .footer> .container{
-                    width: 526px;
+                    width: 582px;
                 }
 
 
@@ -202,8 +229,12 @@ transition: color var(--transition-duration) var(--transition-timing-function);
                     margin-left: 24px;
                  }
 
-                 .send{
-                    margin-top: 72px;
+                 .footer-logo{
+                    text-align: unset;
+                 }
+
+                 .footer-social-info{
+                    text-align: unset;
                  }
 
 .width{
@@ -218,6 +249,9 @@ transition: color var(--transition-duration) var(--transition-timing-function);
     margin-left: unset;
 }
 
+.send-caption{
+    text-align: unset;
+}
 
 .send-wrap{
     justify-content: unset;

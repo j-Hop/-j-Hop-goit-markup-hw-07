@@ -42,7 +42,7 @@
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         .section {
-          background-image: url("../images/bg-mobile2x.jpg");
+          background-image:linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/bg-mobile2x.jpg");
         }
       }
 
@@ -127,7 +127,5 @@ padding-bottom: 96px;
             width: 268px;
            }  
    
-           .send-input{
-            margin-bottom: 72px;
-           }
+
 }

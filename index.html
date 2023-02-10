@@ -15,8 +15,8 @@
         </head>
   <body class="body">
       <header class="header">
-        <div class="container">
-              <a href="" class="header-logo link"><span class="header-span link">Web</span>Studio</a>
+        <div class="container header-container">
+            <a href="" class="header-logo link"><span class="header-span link">Web</span>Studio</a>
           <nav class="header-navigation">
               <ul class="header-list list">
               <li class="header-pages"><a class="header-link link current" href="./index.html">Studio</a></li>
@@ -28,16 +28,16 @@
                 <li class="header-info link"><a class="header-mailo link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                 <li class="header-info link"><a class="header-tel link" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a></li>
                      </ul>
-                    </div>
-                     <button type="button" class="menu-open">
-                      <svg class="hamburger" width="32" height="22" .js-open-menu>
+                    
+                     <button type="button" class="menu-open" data-menu-open>
+                      <svg class="hamburger" width="32" height="22" >
                         <use href="./images/icons.svg/user-icons.svg#icon-hamburger"></use>
                       </svg>
-                     </button>
-                     <div class="mob-menu" .js-menu-container>
-                      <div class="container">
+                     </button></div>
+                     <div class="mob-menu is-hidden" data-menu>
+                      <div class="mob-container"> 
                         <div class="mob-wrap-up">
-                      <button type="button" class="menu-close" .js-close-menu>
+                      <button type="button" class="menu-close" data-menu-close>
                         <svg class="menu-header" width="8" height="8">
                           <use href="./images/icons.svg/close-icons.svg#icon-close"></use>
                         </svg>

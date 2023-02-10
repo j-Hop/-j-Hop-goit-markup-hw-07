@@ -41,6 +41,7 @@ color: var(--second-color);
 display: block;
 padding-top: 24px;
 padding-bottom: 24px;
+margin-bottom: unset;
 transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
@@ -77,6 +78,10 @@ transition: color var(--transition-duration) var(--transition-timing-function);
             border-radius: 2px;
           }
 
+          .section{
+            padding-top: 187px;
+            padding-bottom: 188px;
+          }
 
 
 .section{
@@ -90,7 +95,7 @@ transition: color var(--transition-duration) var(--transition-timing-function);
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .section {
-      background-image: url("../images/people-office\ 1.2x.jpg");
+      background-image:linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office\ 1.2x.jpg");
     }
   }
 
@@ -118,6 +123,21 @@ transition: color var(--transition-duration) var(--transition-timing-function);
     gap: 24px;
   }
 
+  .skills-caption{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: unset;
+  }
+
+  .skills-paragraph{
+    font-weight: 400;
+font-size: 16px;
+line-height: var(--first-typical-lh);
+  }
+
+ 
+
   .background-navigation{
     background-color: #F4F4FD;
     border-radius: 4px;
@@ -135,7 +155,6 @@ transition: color var(--transition-duration) var(--transition-timing-function);
 
     .image{
         display: block;
-        padding-top: 120px;
         padding-bottom: 120px;
       }
       
@@ -200,6 +219,10 @@ width: calc((100% - 120px) / 6);
 height: 88px;
 }
 
+
+
+
+
 .footer> .container{
     width: 1155px;
 }
@@ -238,6 +261,10 @@ height: 88px;
     margin-right: auto;
     margin-left: unset;
     margin-top: unset;
+}
+
+.send-caption{
+    font-weight: 500;
 }
 
       .send-input{
