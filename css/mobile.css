@@ -128,4 +128,9 @@ padding-bottom: 96px;
            }  
    
 
+           .send-input{
+            height: 40px;
+            width: 396px;
+           }
+
 }

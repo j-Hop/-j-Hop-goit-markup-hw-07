@@ -14,6 +14,11 @@
     padding-bottom: unset;
 }
 
+.header-container{
+    min-width: unset;
+    max-width: unset;
+}
+
 .header-logo{
     margin-right: 123px;
 }
@@ -31,7 +36,9 @@
       }
 
 
-
+      .header-info-mailo{
+        margin-bottom: 4px;
+      }
 
 
 .header-mailo{
@@ -42,7 +49,6 @@ letter-spacing: 0.04em;
 color: var(--second-color);
 display: block;
 padding-top: 24px;
-margin-bottom: 4px;
 transition: color var(--transition-duration) var(--transition-timing-function);
 }
 

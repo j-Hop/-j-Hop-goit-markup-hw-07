@@ -13,6 +13,16 @@
     margin-right: 72px;
 }
 
+.header{
+    padding-top: unset;
+    padding-bottom: unset;
+}
+
+.header-container{
+    min-width: unset;
+    max-width: unset;
+}
+
 .header-navigation{
     display:flex;
     align-items: center;
@@ -29,6 +39,10 @@
         display:flex;
         gap: 40px;
         
+      }
+
+      .header-info-mailo{
+        margin-bottom: unset;
       }
 
 .header-mailo,
@@ -81,6 +95,8 @@ transition: color var(--transition-duration) var(--transition-timing-function);
           .section{
             padding-top: 187px;
             padding-bottom: 188px;
+            max-width: 1440px;
+            margin: 0 auto;
           }
 
 
@@ -256,6 +272,15 @@ height: 88px;
         margin-left: unset;
       }
 
+      
+      .footer-logo{
+        text-align: unset;
+     }
+
+     .footer-social-info{
+        text-align: unset;
+     }
+
 
 .send{
     margin-right: auto;
@@ -265,6 +290,7 @@ height: 88px;
 
 .send-caption{
     font-weight: 500;
+    text-align: unset;
 }
 
       .send-input{
@@ -273,6 +299,10 @@ height: 88px;
 
       }
       
+      .send-wrap{
+        justify-content: unset;
+    }
+
       .send-text{
         margin-left: 24px;
 
